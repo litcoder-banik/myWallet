@@ -8,14 +8,12 @@ namespace myWallet.Models
         [Key]
         public int Id { get; set; }
 
-        [Column(TypeName = "nvarchar(8)")]
+        
         [Required(ErrorMessage = "User Name Required")]
-        [MinLength(8, ErrorMessage = "User Name must be 8 character")]
         public string UserName { get; set; }
 
-        [Column(TypeName = "nvarchar(8)")]
+        
         [Required(ErrorMessage = "Password Required")]
-        [StringLength(8, ErrorMessage = "Password must be 8 character")]
         public string Password { get; set; }
 
         [Required(ErrorMessage = "Email Required")]
